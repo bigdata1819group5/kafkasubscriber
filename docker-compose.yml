@@ -7,4 +7,9 @@ services:
     - 8401:8401
     volumes:
     - ./code:/code
+    networks:
+    - decluster_network
+networks:
+  decluster_network:
+    external: true
 
