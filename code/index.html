@@ -1,0 +1,19 @@
+<html>
+
+<bod>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>
+  const socket = io('http://localhost:8401');
+
+console.log(socket.id); // undefined
+
+socket.on('connect', () => {
+  console.log(socket.id); // 'G5p5...'
+});
+socket.on('seq-num',(message)=>{
+  console.log(message);
+});
+</script>
+</bod>
+</html>

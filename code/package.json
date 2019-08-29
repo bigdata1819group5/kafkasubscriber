@@ -1,0 +1,17 @@
+{
+  "name": "bigdata",
+  "version": "1.0.0",
+  "description": "big data web socket streaming",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aryan Sadeghi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "kafka-node": "^4.1.3",
+    "socket.io": "^2.2.0"
+  }
+}

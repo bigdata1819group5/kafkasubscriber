@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server:
+    build: ./env/server
+    ports:
+    - 4788:4788
+    - 8401:8401
+    volumes:
+    - ./code:/code
+
