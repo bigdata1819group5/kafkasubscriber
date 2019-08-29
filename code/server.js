@@ -42,7 +42,7 @@ consumer.on('message', (message) => {
 });
 
 function callSockets(io, message){
-  io.sockets.emit('update', message);
+  // io.sockets.emit('update', message);
 }
 // sends each client its current sequence number
 setInterval(() => {
