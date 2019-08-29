@@ -24,7 +24,7 @@ server.on("connection", (socket) => {
 var kafka = require('kafka-node');
 
 let Consumer = kafka.Consumer,
-    client = new kafka.KafkaClient({kafkaHost:'localhost:19092'}),
+    client = new kafka.KafkaClient({kafkaHost:'kafka-1:19092'}),
     consumer = new Consumer(client,
       [
         {topic: 'vehiclelocation', partition: 0}
